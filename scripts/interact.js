@@ -14,7 +14,7 @@ const alchemyProvider = new ethers.providers.AlchemyProvider(network="rinkeby", 
 // Signer
 const signer = new ethers.Wallet(PRIVATE_KEY, alchemyProvider);
 
-// Contract
+// Contract Instance
 const helloWorldContract = new ethers.Contract(CONTRACT_ADDRESS, contract.abi, signer);
 
 async function main() {
